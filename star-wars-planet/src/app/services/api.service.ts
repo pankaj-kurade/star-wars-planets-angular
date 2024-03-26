@@ -13,6 +13,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getPlanets(page: number): Observable<any> {
+    
     return this.http.get<any>(`${this.apiUrl}/planets/?page=${page}`);
   }
 

@@ -9,22 +9,27 @@ import { AppComponent } from './app.component';
 import { PlanetsComponent } from './pages/planets/planets.component';
 import { ResidentListComponent } from './components/resident-list/resident-list.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
-
-@NgModule({
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+@NgModule({ 
   declarations: [
     AppComponent,
     PlanetsComponent,
     ResidentListComponent,
+    
     PaginationComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,MatInputModule,MatFormFieldModule,
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

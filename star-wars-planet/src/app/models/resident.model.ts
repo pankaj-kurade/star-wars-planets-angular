@@ -3,5 +3,6 @@ export interface Resident {
     height: string; 
     mass: string;
     gender: string;
+    skin_color:string
   }
   

@@ -1,11 +1,11 @@
 /* styles.scss */
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: #fff;
+background-image: url('./app/services/scenic-view-night-sky-with-stars.jpg');   
+color: #ffffff;
   }
   
   .container {
@@ -15,7 +15,7 @@ body {
   }
   
   .card {
-    background-color: #333;
+    background-color: #b48888;
     color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -103,3 +103,8 @@ body {
     }
   }
   
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

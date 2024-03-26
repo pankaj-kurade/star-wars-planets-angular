@@ -1,22 +1,38 @@
 /* planets.component.scss */
 
 .card {
-    background-color: #333;
+    background-color: #3131316b;
     color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
     padding: 20px;
     margin-bottom: 20px;
+    transition: transform 1.3s ease;
+
   }
-  
+  .card-body :hover{
+    
+    /* box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.861); */
+  }
   .card-title {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
+
   }
   
-  .card-text {
+  /* .card-text {
     font-size: 1rem;
     margin-bottom: 8px;
-  }
+  } */
   
+
+  .card-title:hover{
+    color: rgb(242, 198, 198);
+
+  }
+
+  .search-container{
+    position: relative;
+    right: 0%;
+  }

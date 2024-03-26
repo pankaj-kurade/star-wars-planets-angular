@@ -20,6 +20,7 @@ export class ResidentListComponent implements OnInit {
   fetchResidents(): void {
     this.residentsUrls.forEach(url => {
       this.apiService.getResident(url).subscribe((data: Resident) => {
+        console.log(data,'residents')
         this.residents.push(data);
       });
     });

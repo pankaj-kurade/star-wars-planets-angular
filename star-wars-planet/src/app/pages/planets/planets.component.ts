@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../services/api.service';
 import { Planet } from '../../models/planet.model';
+import { log } from 'console';
 
 @Component({
   selector: 'app-planets',
@@ -11,6 +12,8 @@ export class PlanetsComponent implements OnInit {
   planets: Planet[] = [];
   currentPage = 1;
   totalPages = 1;
+  filteredPlanets: Planet[] = [];
+  searchTerm: string = '';
 
   constructor(private apiService: ApiService) { }
 
@@ -21,7 +24,9 @@ export class PlanetsComponent implements OnInit {
   fetchPlanets(): void {
     this.apiService.getPlanets(this.currentPage).subscribe((data: any) => {
       this.planets = data.results;
-      this.totalPages = Math.ceil(data.count / 10); // Assuming 10 results per page
+      this.totalPages = Math.ceil(data.count / 5);
+      console.log(this.totalPages);
+      
     });
   }
 
@@ -29,4 +34,10 @@ export class PlanetsComponent implements OnInit {
     this.currentPage = pageNumber;
     this.fetchPlanets();
   }
+  filterPlanets() {
+    this.filteredPlanets = this.planets.filter((planet: Planet) =>
+      planet.name.toLowerCase().includes(this.searchTerm.toLowerCase())
+    );
+}
+
 }
