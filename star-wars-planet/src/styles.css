@@ -1,1 +1,105 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.scss */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .resident-list {
+    margin-top: 20px;
+  }
+  
+  .resident-item {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  
+  .pagination {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+  }
+  
+  .page-link {
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .page-link:hover {
+    background-color: #777;
+  }
+  
+  .page-link.active {
+    background-color: #007bff;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      padding: 15px;
+    }
+    
+    .card-title {
+      font-size: 1.2rem;
+    }
+  
+    .card-text {
+      font-size: 0.9rem;
+    }
+  
+    .pagination {
+      font-size: 0.8rem;
+    }
+  
+    .page-link {
+      padding: 3px 8px;
+    }
+  }
+  

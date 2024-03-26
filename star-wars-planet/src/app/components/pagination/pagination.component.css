@@ -1,0 +1,32 @@
+/* pagination.component.scss */
+
+.pagination {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+  }
+  
+  .page-link {
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .page-link:hover {
+    background-color: #777;
+  }
+  
+  .page-link.active {
+    background-color: #007bff;
+  }
+  

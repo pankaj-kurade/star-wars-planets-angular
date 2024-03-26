@@ -5,7 +5,7 @@ import { PlanetsComponent } from './pages/planets/planets.component';
 const routes: Routes = [
   { path: '', redirectTo: '/planets', pathMatch: 'full' },
   { path: 'planets', component: PlanetsComponent },
-  { path: '**', redirectTo: '/planets' }
+  { path: 'resident-list', redirectTo: '/ResidentListComponent' }
 ];
 
 @NgModule({
