@@ -1,3 +1,65 @@
+star-wars-planet
+│
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── planet-card/
+│   │   │   │   ├── planet-card.component.ts
+│   │   │   │   ├── planet-card.component.html
+│   │   │   │   ├── planet-card.component.scss
+│   │   │   │   └── ...
+│   │   │   │
+│   │   │   ├── resident-list/
+│   │   │   │   ├── resident-list.component.ts
+│   │   │   │   ├── resident-list.component.html
+│   │   │   │   ├── resident-list.component.scss
+│   │   │   │   └── ...
+│   │   │   │
+│   │   │   ├── pagination/
+│   │   │   │   ├── pagination.component.ts
+│   │   │   │   ├── pagination.component.html
+│   │   │   │   ├── pagination.component.scss
+│   │   │   │   └── ...
+│   │   │   │
+│   │   │   └── ...
+│   │   │
+│   │   ├── services/
+│   │   │   ├── api.service.ts
+│   │   │   └── ...
+│   │   │
+│   │   ├── models/
+│   │   │   ├── planet.model.ts
+│   │   │   ├── resident.model.ts
+│   │   │   └── ...
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── planets/
+│   │   │   │   ├── planets.component.ts
+│   │   │   │   ├── planets.component.html
+│   │   │   │   ├── planets.component.scss
+│   │   │   │   └── ...
+│   │   │   │
+│   │   │   └── ...
+│   │   │
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.scss
+│   │   └── ...
+│   │
+│   ├── assets/
+│   │   ├── images/
+│   │   └── ...
+│   │
+│   ├── environments/
+│   │   ├── environment.ts
+│   │   └── environment.prod.ts
+│   │
+│   ├
+│
+└── 
+
+
 # StarWarsPlanet
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
@@ -25,3 +87,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+

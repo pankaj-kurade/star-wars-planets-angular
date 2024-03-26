@@ -1,11 +1,10 @@
-/* styles.scss */
 
 body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
 background-image: url('./app/services/scenic-view-night-sky-with-stars.jpg');   
-color: #ffffff;
+color: #000000;
   }
   
   .container {
