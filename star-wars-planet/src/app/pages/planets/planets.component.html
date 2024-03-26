@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 mt-4">
+        <h1 class="text-center mb-4">Star Wars Planets Directory</h1>
+        <div *ngFor="let planet of planets" class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">{{ planet.name }}</h5>
+            <p class="card-text">Climate: {{ planet.climate }}</p>
+            <p class="card-text">Population: {{ planet.population }}</p>
+            <p class="card-text">Terrain: {{ planet.terrain }}</p>
+            <app-resident-list [residentsUrls]="planet.residents"></app-resident-list>
+          </div>
+        </div>
+  
+        <app-pagination [currentPage]="currentPage" [totalPages]="totalPages" (pageChange)="onPageChange($event)"></app-pagination>
+      </div>
+    </div>
+  </div>
+  
