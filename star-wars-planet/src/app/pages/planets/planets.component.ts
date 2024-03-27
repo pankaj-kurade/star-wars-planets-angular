@@ -24,7 +24,7 @@ export class PlanetsComponent implements OnInit {
   fetchPlanets(): void {
     this.apiService.getPlanets(this.currentPage).subscribe((data: any) => {
       this.planets = data.results;
-      this.totalPages = Math.ceil(data.count / 5);
+      this.totalPages = Math.ceil(data.count /10);
       console.log(this.totalPages);
       
     });
